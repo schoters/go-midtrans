@@ -70,7 +70,7 @@ type InstallmentDetail struct {
 // CreditCardDetail : Represent credit card detail
 type CreditCardDetail struct {
 	Secure          bool               `json:"secure,omitempty"`
-	TokenID         string             `json:"token_id"`
+	TokenID         string             `json:"token_id,omitempty"`
 	Bank            string             `json:"bank,omitempty"`
 	Bins            []string           `json:"bins,omitempty"`
 	Installment     *InstallmentDetail `json:"installment,omitempty"`
